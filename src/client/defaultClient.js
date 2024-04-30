@@ -12,7 +12,7 @@ const defaultApikeys = [
     "440a0bd3-efaa-439d-8237-8e2f6c5fcd25"
 ]
 
-const defaultprivateKey = '2fe76d9f1d872d07826cada397350819d3ab5b4a61bbc846c14de2b2f1edf9ba'
+const defaultPrivateKey = '2fe76d9f1d872d07826cada397350819d3ab5b4a61bbc846c14de2b2f1edf9ba'
 
 const defaultClient = (url, apikey = null, privateKey = null) => {
     if (!apikey) {
@@ -25,7 +25,7 @@ const defaultClient = (url, apikey = null, privateKey = null) => {
     return new TronWeb({
         fullHost: url,
         headers: {'TRON-PRO-API-KEY': apikey},
-        privateKey: privateKey || defaultprivateKey
+        privateKey: privateKey || defaultPrivateKey
     })
 }
 
